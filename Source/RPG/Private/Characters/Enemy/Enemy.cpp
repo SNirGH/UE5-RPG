@@ -7,6 +7,8 @@
 AEnemy::AEnemy()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	AutoPossessAI = EAutoPossessAI::PlacedInWorld;
 }
 
 void AEnemy::BeginPlay()
