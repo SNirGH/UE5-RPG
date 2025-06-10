@@ -2,11 +2,14 @@
 
 
 #include "Characters/BaseCharacter.h"
+#include "Component/AttributesComponent.h"
 
 
 ABaseCharacter::ABaseCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	Attributes = CreateDefaultSubobject<UAttributesComponent>(FName("Attributes"));
 }
 
 void ABaseCharacter::BeginPlay()

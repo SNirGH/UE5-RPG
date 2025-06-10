@@ -14,7 +14,7 @@ AEnemyController::AEnemyController()
 
 	SightConfig->SightRadius = 1500.0F;
 	SightConfig->LoseSightRadius = 1600.0F;
-	SightConfig->PeripheralVisionAngleDegrees = 45.0F;
+	SightConfig->PeripheralVisionAngleDegrees = 90.0F;
 	SightConfig->SetMaxAge(5.0F);
 	SightConfig->DetectionByAffiliation.bDetectEnemies = true;
 	SightConfig->DetectionByAffiliation.bDetectFriendlies = true;

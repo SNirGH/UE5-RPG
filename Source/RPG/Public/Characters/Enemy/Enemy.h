@@ -6,6 +6,8 @@
 #include "Characters/BaseCharacter.h"
 #include "Enemy.generated.h"
 
+class UEnemyHealthBarComponent;
+
 UCLASS()
 class RPG_API AEnemy : public ABaseCharacter
 {
@@ -13,10 +15,11 @@ class RPG_API AEnemy : public ABaseCharacter
 
 public:
 	AEnemy();
-
+	virtual void Tick(float DeltaSeconds) override;
 protected:
 	virtual void BeginPlay() override;
 
-public:
-	virtual void Tick(float DeltaTime) override;
+private:
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UEnemyHealthBarComponent> EnemyHealthBar;
 };

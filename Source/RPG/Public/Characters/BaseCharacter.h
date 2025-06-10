@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "BaseCharacter.generated.h"
 
+class UAttributesComponent;
 class AWeapon;
 
 UCLASS()
@@ -43,7 +44,9 @@ protected:
 private:
 	void PlayMontageSection(UAnimMontage* Montage, FName SectionName);
 	void PlayRandomSectionInMontage(UAnimMontage* Montage);
-	TArray<FName> GetAllMontageSectionNames(UAnimMontage* Montage);
 	
+	TArray<FName> GetAllMontageSectionNames(UAnimMontage* Montage);
+
+	TObjectPtr<UAttributesComponent> Attributes;	
 	TMap<const TObjectPtr<UAnimMontage>, TArray<FName>> MontageSectionNames;
 };
