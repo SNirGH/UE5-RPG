@@ -23,6 +23,22 @@ void ABaseCharacter::PlayAttackMontage()
 	PlayRandomSectionInMontage(AttackMontage);
 }
 
+float ABaseCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent,
+	class AController* EventInstigator, AActor* DamageCauser)
+{
+	HandleDamage(DamageAmount);
+	
+	return DamageAmount;
+}
+
+void ABaseCharacter::HandleDamage(float DamageAmount)
+{
+	if (Attributes)
+	{
+		Attributes->RecieveDamage(DamageAmount);
+	}
+}
+
 void ABaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

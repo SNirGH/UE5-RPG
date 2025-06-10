@@ -34,9 +34,13 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Weapons Properties")
 	bool bShowBoxDebug = false;
 
+	UPROPERTY(EditAnywhere, Category = "Weapons Properties")
+	float BaseDamage = 20.0F;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Effects)
 	TObjectPtr<UNiagaraSystem> TrailSystem;
 
 	UPROPERTY()
 	TObjectPtr<UNiagaraComponent> TrailComponent;
+
 };

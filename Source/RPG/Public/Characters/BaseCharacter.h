@@ -26,6 +26,7 @@ protected:
 	virtual void BeginPlay() override;
 	
 	virtual void PlayAttackMontage();
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 	virtual bool CanAttack() { return false; }
 
@@ -33,6 +34,7 @@ protected:
 	virtual void AttackEnd() {} 
 
 	/** Non-Virtual Functions **/
+	void HandleDamage(float DamageAmount);
 
 	/** Variables **/
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Weapon)
@@ -46,7 +48,9 @@ private:
 	void PlayRandomSectionInMontage(UAnimMontage* Montage);
 	
 	TArray<FName> GetAllMontageSectionNames(UAnimMontage* Montage);
-
-	TObjectPtr<UAttributesComponent> Attributes;	
+	
 	TMap<const TObjectPtr<UAnimMontage>, TArray<FName>> MontageSectionNames;
+
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UAttributesComponent> Attributes;
 };

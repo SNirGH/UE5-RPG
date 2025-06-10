@@ -20,6 +20,9 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	/** Functions **/
+	void ShowHealthBar(bool bShowHealth);
+	
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UEnemyHealthBarComponent> EnemyHealthBar;
 };

@@ -26,6 +26,14 @@ void AEnemy::BeginPlay()
 	}
 }
 
+void AEnemy::ShowHealthBar(bool bShowHealth)
+{
+	if (EnemyHealthBar)
+	{
+		EnemyHealthBar->SetVisibility(bShowHealth);
+	}
+}
+
 void AEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

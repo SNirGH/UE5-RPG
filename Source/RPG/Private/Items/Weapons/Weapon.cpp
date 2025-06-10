@@ -7,6 +7,7 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AWeapon::AWeapon()
 {
@@ -60,6 +61,14 @@ void AWeapon::WeaponTrace()
 		true
 	);
 	IgnoreActors.AddUnique(BoxHit.GetActor());
+
+	UGameplayStatics::ApplyDamage(
+		BoxHit.GetActor(),
+		BaseDamage,
+		GetInstigator()->GetController(),
+		this,
+		UDamageType::StaticClass()
+	);
 }
 
 void AWeapon::ActivateWeaponTrail()
