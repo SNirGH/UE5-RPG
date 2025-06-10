@@ -8,20 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0925a49f-fd77-4cdc-a14d-846aa5cf9a7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Enemy/WBP_EnemyHealthBar.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Player/WBP_PlayerHUD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Enemy/AI/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Enemy/AI/BT_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Enemy/BP_EnemyBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Enemy/BP_EnemyBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Characters/Player/BP_PlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Characters/Player/BP_PlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/UI/Enemy/BP_EnemyHealthBar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Enemy/BP_EnemyHealthBar.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/UI/Player/BP_PlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/UI/Player/BP_PlayerHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Minimal.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Minimal.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG/Private/Characters/BaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Private/Characters/BaseCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG/Private/Characters/Enemy/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Private/Characters/Enemy/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG/Private/Controller/EnemyController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Private/Controller/EnemyController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG/Public/Characters/BaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Public/Characters/BaseCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG/Public/Characters/Enemy/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Public/Characters/Enemy/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG/Private/Component/AttributesComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Private/Component/AttributesComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG/Public/Component/AttributesComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG/Public/Component/AttributesComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +160,7 @@
       <workItem from="1749326506464" duration="816000" />
       <workItem from="1749390865004" duration="10601000" />
       <workItem from="1749478140922" duration="5738000" />
-      <workItem from="1749564165511" duration="3122000" />
+      <workItem from="1749564165511" duration="4637000" />
     </task>
     <task id="LOCAL-00001" summary="BTTask Find Random Location">
       <option name="closed" value="true" />
