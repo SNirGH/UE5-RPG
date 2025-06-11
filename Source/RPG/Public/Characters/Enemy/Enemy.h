@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "DeathPosesSet.h"
 #include "Characters/BaseCharacter.h"
 #include "Enemy.generated.h"
 
@@ -26,7 +25,4 @@ private:
 	
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UEnemyHealthBarComponent> EnemyHealthBar;
-
-	UPROPERTY(EditDefaultsOnly)
-	TArray<FDeathPosesSet> DeathPoses;
 };

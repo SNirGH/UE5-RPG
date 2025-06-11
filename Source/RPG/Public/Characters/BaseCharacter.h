@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Enemy/DeathPosesSet.h"
 #include "GameFramework/Character.h"
 #include "BaseCharacter.generated.h"
 
@@ -20,6 +21,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	
 	FORCEINLINE AWeapon* GetEquippedWeapon() const { return EquippedWeapon; }
+
+	UFUNCTION(BlueprintCallable)
+	FORCEINLINE TArray<FDeathPosesSet> GetDeathPosesSet() const { return DeathPoses; }
 protected:
 
 	/** Virtual Functions **/
@@ -42,6 +46,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Montages)
 	TObjectPtr<UAnimMontage> AttackMontage;
+
+	UPROPERTY(EditDefaultsOnly)
+	TArray<FDeathPosesSet> DeathPoses;
 
 private:
 	void PlayMontageSection(UAnimMontage* Montage, FName SectionName);
